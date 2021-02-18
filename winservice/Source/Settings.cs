@@ -1,5 +1,4 @@
-﻿using Aula_Dagtilbud_AD_Integration.DTO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;

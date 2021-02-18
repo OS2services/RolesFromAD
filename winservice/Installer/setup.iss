@@ -1,5 +1,5 @@
 #define AppId "{{937e5a02-8368-40bc-9826-a1228a844ef3}"
-#define AppSourceDir "..\Aula Dagtilbud AD Integration\bin\Debug"
+#define AppSourceDir "..\Source\bin\Debug"
 #define AppName "AulaDagtilbudADIntegration"
 #define AppVersion "1.0.0"
 #define AppPublisher "Digital Identity"
@@ -30,7 +30,6 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Source: "*.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "*.config"; DestDir: "{app}"; Flags: ignoreversion onlyifdoesntexist
 Source: "*.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "*.txt"; DestDir: "{app}"; Flags: ignoreversion
 Source: "*.pdb"; DestDir: "{app}"; Flags: ignoreversion
 
 [Run]
