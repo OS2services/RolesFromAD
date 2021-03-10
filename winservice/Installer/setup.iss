@@ -33,7 +33,7 @@ Source: "*.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "*.pdb"; DestDir: "{app}"; Flags: ignoreversion
 
 [Run]
-Filename: "{app}\AulaDagtilbud AD Integration.exe"; Parameters: "install" 
+Filename: "{app}\Aula Dagtilbud AD Integration.exe"; Parameters: "install" 
 
 [UninstallRun]
-Filename: "{app}\AulaDagtilbud AD Integration.exe"; Parameters: "uninstall"
+Filename: "{app}\Aula Dagtilbud AD Integration.exe"; Parameters: "uninstall"
