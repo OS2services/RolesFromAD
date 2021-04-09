@@ -95,7 +95,9 @@ public class SocketHandler extends TextWebSocketHandler {
 			return new AsyncResult<CommandResponse>(response);
 		}
 
-		// wait for result for 20 seconds (polling every 250 ms)
+		// wait for result for 10 minutes (polling every 250 ms)
+		int sleep = 250;
+		int maxTries = 10 * 60 * (1000 / sleep);
 		int tries = 0;
 		ResponseHolder holder = null;
 		do {
@@ -105,10 +107,10 @@ public class SocketHandler extends TextWebSocketHandler {
 				break;
 			}
 
-			Thread.sleep(250);
+			Thread.sleep(sleep);
 
 			tries++;
-		} while (tries <= 80);
+		} while (tries <= maxTries);
 
 		if (holder == null) {
 			log.error("Timeout waiting for response");
